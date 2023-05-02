@@ -1,13 +1,13 @@
 Console.Write("input a quantity elements for array: " );
 int element1 = Convert.ToInt32(Console.ReadLine());
-string [] stringArray = new string [element1];
+string[] stringArray = new string [element1];
 
 void ShowArray(string[] stringArray)
 {
  for (int i = 0; i < stringArray.Length; i++)
  {
   Console.Write($"input {i+1} a elements for array: ");
-   stringArray[i] = Console.ReadLine( );
+   stringArray[i] = Console.ReadLine();
   }
 }
 string[] element(string[] stringArray)
@@ -30,7 +30,7 @@ for (int i = 0; i < stringArray.Length; i++)
  }
      return temp; 
 }
-void print(string[] stringArray)
+void conclusion(string[] stringArray)
 {
   Console.Write("[");
   for (int i = 0; i < stringArray.Length; i++)
@@ -38,4 +38,4 @@ void print(string[] stringArray)
    Console.Write("]");
 }
 ShowArray(stringArray);
-print(element(stringArray));
+conclusion(element(stringArray));
